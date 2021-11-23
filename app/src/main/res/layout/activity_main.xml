@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll_View">
+
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:layout_marginStart="2dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="18dp">
+
+
+          <TextView
+              android:id="@+id/Common_side_effect_textView1"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="24dp"
+              android:layout_marginRight="24dp"
+
+              android:shadowColor="#191919"
+              android:text="Common side effect(AEFI)"
+              android:textAlignment="textStart"
+
+              android:textColor="#191919"
+              android:textSize="16sp"
+              android:textStyle="bold"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="@+id/some_common_side_effects_textView"
+              app:layout_constraintTop_toTopOf="parent" />
+
+          <TextView
+              android:id="@+id/Source_textView3"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="4dp"
+
+              android:text="Source:"
+              android:textAlignment="textStart"
+              android:textColor="#AEAEAE"
+              android:textSize="12sp"
+              app:layout_constraintStart_toStartOf="@+id/some_common_side_effects_textView"
+              app:layout_constraintTop_toBottomOf="@+id/Common_side_effect_textView1" />
+
+              <TextView
+                  android:id="@+id/textView5"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="3dp"
+                  android:layout_marginTop="4dp"
+
+                  android:text="mohfw.gov.in"
+                  android:textSize="12sp"
+                  android:textStyle="bold"
+                  app:layout_constraintStart_toEndOf="@+id/Source_textView3"
+                  app:layout_constraintTop_toBottomOf="@+id/Common_side_effect_textView1" />
+
+          <TextView
+              android:id="@+id/some_common_side_effects_textView"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="40dp"
+              android:layout_marginEnd="24dp"
+              android:text="Some common side_effects  you  might  experience after the covid 19 vaccine."
+
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+              app:layout_constraintTop_toBottomOf="@+id/Source_textView3" />
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+              android:id="@+id/constraintLayout2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="24dp"
+              android:layout_marginTop="8dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/some_common_side_effects_textView">
+
+
+              <TextView
+                  android:id="@+id/mild_headaches_textView"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="8dp"
+                  android:gravity="center"
+                  android:text="mild headaches"
+                  android:textAlignment="center"
+                  app:layout_constraintEnd_toEndOf="@+id/mild_headaches_image"
+                  app:layout_constraintStart_toStartOf="@+id/mild_headaches_image"
+                  app:layout_constraintTop_toBottomOf="@id/mild_headaches_image" />
+
+              <TextView
+                  android:id="@+id/Pain_or_swelling_at_the_injection_site_textView"
+                  android:layout_width="183dp"
+                  android:layout_height="33dp"
+                  android:layout_marginTop="8dp"
+                  android:gravity="center"
+                  android:text="Pain or swelling at the injection site"
+                  android:textAlignment="center"
+                  app:layout_constraintEnd_toEndOf="@+id/Pain_or_swelling_at_the_injection_site_imageView"
+                  app:layout_constraintHorizontal_bias="0.196"
+                  app:layout_constraintStart_toStartOf="@+id/Pain_or_swelling_at_the_injection_site_imageView"
+                  app:layout_constraintTop_toBottomOf="@id/Pain_or_swelling_at_the_injection_site_imageView" />
+
+
+              <ImageView
+                  android:id="@+id/Pain_or_swelling_at_the_injection_site_imageView"
+                  android:layout_width="150dp"
+                  android:layout_height="150dp"
+
+                  android:layout_marginEnd="26dp"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toEndOf="@id/mild_headaches_image"
+                  app:layout_constraintTop_toTopOf="@+id/mild_headaches_image"
+                  tools:srcCompat="@tools:sample/avatars" />
+
+              <ImageView
+                  android:id="@+id/mild_headaches_image"
+                  android:layout_width="150dp"
+                  android:layout_height="150dp"
+                  android:layout_marginStart="5dp"
+
+
+                  android:layout_marginTop="16dp"
+                  android:layout_marginEnd="27dp"
+                  app:layout_constraintEnd_toStartOf="@+id/Pain_or_swelling_at_the_injection_site_imageView"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+
+              <ImageView
+                  android:id="@+id/mild_fever_imageView"
+                  android:layout_width="150dp"
+                  android:layout_height="150dp"
+
+                  app:layout_constraintEnd_toEndOf="@+id/mild_headaches_image"
+                  app:layout_constraintHorizontal_bias="0.0"
+                  app:layout_constraintStart_toStartOf="@+id/mild_headaches_image"
+                  app:layout_constraintTop_toTopOf="@+id/irritability_imageView"
+                  tools:srcCompat="@tools:sample/avatars" />
+
+              <ImageView
+                  android:id="@+id/irritability_imageView"
+                  android:layout_width="150dp"
+                  android:layout_height="150dp"
+
+                  android:layout_marginTop="32dp"
+
+                  app:layout_constraintEnd_toEndOf="@+id/Pain_or_swelling_at_the_injection_site_imageView"
+                  app:layout_constraintStart_toStartOf="@+id/Pain_or_swelling_at_the_injection_site_imageView"
+                  app:layout_constraintTop_toBottomOf="@id/Pain_or_swelling_at_the_injection_site_textView"
+                  tools:srcCompat="@tools:sample/avatars" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="8dp"
+                  android:gravity="center"
+                  android:text="mild fever"
+                  android:textAlignment="center"
+                  app:layout_constraintEnd_toEndOf="@+id/mild_fever_imageView"
+                  app:layout_constraintStart_toStartOf="@+id/mild_fever_imageView"
+                  app:layout_constraintTop_toBottomOf="@+id/mild_fever_imageView" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="8dp"
+                  android:gravity="center"
+                  android:text="Irritability"
+
+                  app:layout_constraintEnd_toEndOf="@+id/irritability_imageView"
+                  app:layout_constraintHorizontal_bias="0.395"
+                  app:layout_constraintStart_toStartOf="@+id/irritability_imageView"
+                  app:layout_constraintTop_toBottomOf="@id/irritability_imageView" />
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+          <TextView
+              android:id="@+id/dot1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="32dp"
+              android:layout_marginEnd="25dp"
+              android:text=" \u25CF "
+
+              app:layout_constraintEnd_toStartOf="@+id/side_effects_should_go_away_in_a_few_days_textView"
+              app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+              app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"/>
+
+          <TextView
+              android:id="@+id/side_effects_should_go_away_in_a_few_days_textView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="40dp"
+              android:layout_marginTop="32dp"
+              android:layout_marginEnd="85dp"
+              android:text="Side-effects should go away in a few days"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="@+id/dot1"
+              app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+
+          <TextView
+              android:id="@+id/dot2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="28dp"
+              android:text=" \u25CF "
+              android:textSize="16sp"
+              app:layout_constraintEnd_toEndOf="@+id/dot1"
+              app:layout_constraintHorizontal_bias="1.0"
+              app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+              app:layout_constraintTop_toBottomOf="@+id/dot1" />
+
+          <TextView
+              android:id="@+id/Get_the_seconde_dose_even_if_you_have_side_effect"
+              android:layout_width="325dp"
+              android:layout_height="52dp"
+              android:layout_marginTop="24dp"
+              android:text="Get the seconde dose even if you have side-effect from the first dose, unless a vaccination provider or your doctor advices you otherwise."
+              app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="@+id/side_effects_should_go_away_in_a_few_days_textView"
+              app:layout_constraintTop_toBottomOf="@+id/side_effects_should_go_away_in_a_few_days_textView" />
+
+          <TextView
+              android:id="@+id/Recognized_health_organization"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="75dp"
+
+              android:shadowColor="#191919"
+              android:text="Recognized health organization"
+              android:textAlignment="textStart"
+
+              android:textColor="#191919"
+              android:textSize="16sp"
+              android:textStyle="bold"
+              app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+              app:layout_constraintTop_toBottomOf="@+id/dot2" />
+
+          <RelativeLayout
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="24dp"
+              app:layout_constraintTop_toBottomOf="@id/Recognized_health_organization">
+
+              <androidx.recyclerview.widget.RecyclerView
+                  android:id="@+id/recyclerView"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+
+              </androidx.recyclerview.widget.RecyclerView>
+
+          </RelativeLayout>
+
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
